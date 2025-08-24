@@ -124,10 +124,22 @@ viewPage : Page -> Html Msg
 viewPage page =
     case page of
         About ->
-            div [] [ h1 [] [ text "About" ], text "This is the Longmont chapter of the worldwide ", a [ Attr.href "https://f3nation.com" ] [ text "F3 Nation" ], text " a workout group aimed at cultivating Fitness, Fellowship, and Faith in all men." ]
+            div []
+                [ h1 [] [ text "About" ]
+                , text "The mission of F3 is plant, grow, and serve small workout groups for Men for the invigoration of Male Community Leadership. This is the Longmont chapter of the worldwide "
+                , a [ Attr.href "https://f3nation.com" ] [ text "F3 Nation" ]
+                , text " a workout group aimed at cultivating Fitness, Fellowship, and Faith in all men."
+                , br [] []
+                , a [ Attr.href "https://f3nation.com/about-f3" ] [ text "F3 Nation - About" ]
+                ]
 
         ForNewGuys ->
-            div [] [ h1 [] [ text "FNG's" ], text "Welcome to F3!" ]
+            div []
+                [ h1 [] [ text "FNG's" ]
+                , text "Welcome to F3! This location runs primarily on our chapter "
+                , a [ Attr.href "https://f3longmont.slack.com/archives/C036LCJSQSW" ] [ text "slack channel" ]
+                , text " where you can join the conversation!"
+                ]
 
         Locations ->
             div []

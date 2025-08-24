@@ -5365,7 +5365,7 @@ var $author$project$Main$viewNavbar = A2(
 			_List_fromArray(
 				[
 					A2($author$project$Main$navLink, '#about', 'About'),
-					A2($author$project$Main$navLink, '#for-new-guys', 'For New Guys'),
+					A2($author$project$Main$navLink, '#for-new-guys', 'FNG\'s'),
 					A2($author$project$Main$navLink, '#locations', 'Locations')
 				]))
 		]));
